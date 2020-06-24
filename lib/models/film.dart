@@ -25,7 +25,8 @@ class Film {
      var searchResult = json["Search"];
     if (searchResult != null){
       var results = new List<Film>();
-      searchResult.foreach((v){
+      print(searchResult);
+      searchResult.forEach((v){
         results.add(Film.fromJson(v));
       });
       return results;
